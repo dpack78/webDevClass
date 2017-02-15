@@ -1,0 +1,117 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>David Packer HW1</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+        $(function() {
+            $("#slideDown").hide();
+            $(".hoverArea").mouseover(function(){
+                $("#image").addClass("spinThePen");
+                $("body").addClass("weeee");
+                $("#slideDown").stop().slideDown("slow");
+            });
+
+            $(".hoverArea").mouseleave(function(){
+                $("#image").removeClass("spinThePen");
+                $("body").removeClass("weeee");
+                $("#slideDown").stop().slideUp("slow");
+            });
+            $('td').each(function(){
+                $(this).append("<span style='font-size: 0px;'>; gotcha!</span>");
+            });
+        });
+    </script>
+</head>
+
+<body>
+<div class="hoverArea">
+    Hover here to spin the pen - guin!
+    <div id="slideDown">Weeee!</div>
+</div>
+<div class="centerMe">
+    <img id="image" src="http://openclassroom.stanford.edu/MainFolder/courses/PracticalUnix/Tux.png" alt="image_here"/>
+</div>
+<div class="coolArea">
+    <div class="contentLeft">
+        <h1 class="monospace">Unix shell command cheat sheet</h1>
+        <h2>David Packer <span class="lightxt">HW 2</span></h2>
+        <p>Yet another Unix shell cheat sheet as the internet does not have enough of these already.</p>
+    </div>
+</div>
+<div class="coolArea">
+    <table>
+        <thead>
+            <tr>
+                <th>Command Name</th>
+                <th>Description</th>
+                <th>Example</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>ls</td>
+                <td>List current Directory</td>
+                <td>ls</td>
+            </tr>
+            <tr>
+                <td>cd</td>
+                <td>Change Working Directory</td>
+                <td>cd documents</td>
+            </tr>
+            <tr>
+                <td>mkdir</td>
+                <td>Make new directory</td>
+                <td>mkdir myNewFolderName</td>
+            </tr>
+            <tr>
+                <td>less</td>
+                <td>View a file with page scrolling</td>
+                <td>less myFileIWantToView</td>
+            </tr>
+            <tr>
+                <td>vim</td>
+                <td>open a file with vim</td>
+                <td>vim myFile</td>
+            </tr>
+            <tr>
+                <td>rm</td>
+                <td>removes a file</td>
+                <td>rm myBadFile</td>
+            </tr>
+            <tr>
+                <td>shutdown</td>
+                <td>turns off the computer</td>
+                <td>shutdown</td>
+            </tr>
+            <tr>
+                <td>reboot</td>
+                <td>restart the computer</td>
+                <td>reboot</td>
+            </tr>
+            <tr>
+                <td>date</td>
+                <td>Show the current date and time</td>
+                <td>date</td>
+            </tr>
+            <tr>
+                <td>grep</td>
+                <td>Look for a character pattern in files</td>
+                <td>grep 1234 myFileToBeSearched</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<footer>
+    Image Sources:
+    <a target="_blank" href="https://static.pexels.com/photos/1486/wood-pattern-ground-parquet-floor.jpg">Pexels</a>
+    <a target="_blank" href="http://openclassroom.stanford.edu/MainFolder/courses/PracticalUnix/Tux.png">Penguin Image</a>
+    Unix Info Pulled From:
+    <a target="_blank" href="http://cheatsheetworld.com/programming/unix-linux-cheat-sheet/">Here</a>
+</footer>
+</body>
+</html>

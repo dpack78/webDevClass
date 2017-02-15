@@ -1,0 +1,134 @@
+/*
+display
+*/
+
+.centerMe {
+    text-align: center;
+}
+
+.contentLeft{
+    display:inline-block;
+}
+
+.hoverArea{
+    display:inline;
+    float:right;
+    padding:30px;
+    border: solid 1px red;
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    background-color: #000000;
+    opacity: .9;
+}
+.coolArea{
+    padding: 30px;
+    background-color: #000000;
+    opacity: .9;
+    width: 70%;
+    margin: 20px auto 20px auto;
+    border-radius: 10px;
+    vertical-align: top;
+}
+
+.lightxt{
+    font-weight: bold;
+    color: #4d3d40;
+}
+
+.monospace{
+    font-family:"Lucida Console", Monaco, monospace
+}
+
+body{
+    background-image: url(https://static.pexels.com/photos/1486/wood-pattern-ground-parquet-floor.jpg);
+    color:white;
+    background-size:cover;
+    background-attachment: fixed;
+}
+
+.spinThePen{
+    animation: spinThePen 1s infinite;
+}
+
+h1{
+    text-decoration: underline;
+}
+
+footer{
+    padding: 30px;
+    background-color: #000000;
+    opacity: .9;
+    color:white;
+    width: 70%;
+    margin: 0px auto 10px auto;
+    border-radius: 10px;
+}
+
+table{
+    width: 100%;
+}
+
+table th{
+    font-size: 30px;
+}
+
+table, th, td {
+    border: 1px solid #888888;
+    border-collapse: collapse;
+}
+
+td{
+    padding:10px;
+    font-family:"Lucida Console", Monaco, monospace
+}
+
+th{
+    padding: 10px;
+}
+
+#slideDown{
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.weeee{
+background-image: url(https://musiccourt.files.wordpress.com/2010/09/psychedelic.jpg);
+}
+
+/*Selectors*/
+
+table tbody tr:hover{
+    background-color: #888888;
+    color: black;
+}
+
+a:visited {
+    color: green;
+}
+
+a:hover {
+    color: #888888;
+}
+
+td:first-of-type{
+    color: green;
+}
+
+tr:nth-child(even){
+    opacity: .5;
+}
+
+tr:nth-child(odd){
+    opacity:1;
+}
+
+@keyframes spinThePen {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
