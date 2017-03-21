@@ -1,0 +1,73 @@
+.node {
+    display: block;
+    background-color: white;
+    color: black;
+    padding: 5px;
+    float: left;
+    border: solid 1px black;
+    margin: 3px;
+    box-shadow: 0 5px 9px 0;
+}
+
+.header {
+    background-color: white;
+    color: black;
+    padding: 5px;
+    text-align: center;
+    display: block;
+}
+body {
+    overflow-x:scroll;
+    min-width: 40000px;
+}
+.spacer{
+    padding: 200px;
+}
+a{
+    margin-left: 20px;
+}
+
+.mainBlock{
+    display:block;
+    white-space: nowrap;
+    overflow:auto;
+    width: 100%;
+    margin: 20px;
+}
+
+.c1{ background-color: rgb(79, 255, 228);}
+.c2{ background-color: rgb(79, 235, 228);}
+.c3{ background-color: rgb(79, 205, 228);}
+.c4{ background-color: rgb(79, 180, 228);}
+.c5{ background-color: rgb(79, 150, 228);}
+.c6{ background-color: rgb(79, 120, 228);}
+.c7{ background-color: rgb(79, 90, 228);}
+.c8{ background-color: rgb(79, 60, 228);}
+.c9{ background-color: rgb(79, 30, 228);}
+.c10{ background-color: rgb(79, 0, 228);}
+.c11{ background-color: rgb(79, 0, 228);}
+
+#setupDiv{
+    padding: 10px;
+    margin: 20px;
+    display: inline-block;
+    border: solid 1px black;
+    box-shadow: 0 5px 9px 0;
+    text-align: center;
+}
+
+.rangeSet{
+    display:inline-block;
+    text-align: center;
+}
+input[type="range"]{
+    display: block;
+    margin:10px;
+}
+
+button{
+    padding: 10px;
+    background-color: #82a6e0;
+    border-radius: 5px;
+    /*border: black;*/
+}
